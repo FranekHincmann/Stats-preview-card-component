@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>My solution | Stats preview card component</title>
+  </head>
+  <body>
+    <style>
+      :root {
+        --clr-Very-dark-blue: hsl(233, 47%, 7%); /* background main */
+        --clr-Dark-desaturated-blue: hsl(244, 38%, 16%); /* card background */
+        --clr-Soft-violet: hsl(277, 64%, 61%); /* accent */
+        --clr-White: hsl(0, 0%, 100%); /* main heading, stats */
+        --clr-Slightly-transparent-white: hsla(
+          0,
+          0%,
+          100%,
+          0.75
+        ); /* (main paragraph) */
+        --clr-Slightly-transparent-whiteeee: hsla(
+          0,
+          0%,
+          100%,
+          0.6
+        ); /* (stat headings) */
+        /* fonts */
+        --ff1-font-family: "Inter", sans-serif; /* Weights: 400, 700 */
+        --ff2-font-family: "Lexend Deca", sans-serif; /*  Weights: 400 */
+      }
+      body {
+        background: var(--clr-Very-dark-blue);
+      }
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 9rem;
+      }
+      .container {
+        background: var(--clr-Dark-desaturated-blue);
+        border-radius: 0.5rem 0 0 0.5rem;
+        width: 550px;
+        height: 440px;
+      }
+      .image {
+        width: 550px;
+        height: 440px;
+        border-radius: 0 0.5rem 0.5rem 0;
+        background: var(--clr-Soft-violet),
+          url(.images/image-header-desktop.jpg) center no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+      }
+
+      .main-heading {
+        padding: 1rem 0 0rem 3rem;
+      }
+      .heading {
+        font-weight: 700;
+        color: var(--clr-White);
+        font-family: var(--ff1-font-family);
+        font-size: 2.3rem;
+      }
+      .insi-color {
+        color: var(--clr-Soft-violet);
+      }
+      .para-one {
+        padding: 0rem 9rem 4rem 3rem;
+      }
+      .paragraph {
+        color: var(--clr-Slightly-transparent-whiteeee);
+        font-family: var(--ff1-font-family);
+        font-weight: 400;
+        font-size: 0.9rem;
+        word-spacing: 0.2rem;
+      }
+      .tenk {
+        color: var(--clr-White);
+        font-family: var(--ff1-font-family);
+        font-weight: 700;
+      }
+      .companies {
+        color: var(--clr-Slightly-transparent-whiteeee);
+        font-family: var(--ff2-font-family);
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        font-size: 0.7rem;
+      }
+      .threeonefour {
+        color: var(--clr-White);
+        font-family: var(--ff1-font-family);
+        font-weight: 700;
+      }
+      .templates {
+        color: var(--clr-Slightly-transparent-whiteeee);
+        font-family: var(--ff2-font-family);
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        font-size: 0.7rem;
+      }
+      .twelveM {
+        color: var(--clr-White);
+        font-family: var(--ff1-font-family);
+        font-weight: 700;
+      }
+      .Queries {
+        color: var(--clr-Slightly-transparent-whiteeee);
+        font-family: var(--ff2-font-family);
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        font-size: 0.7rem;
+      }
+      .punkty {
+        display: flex;
+        padding-left: 3rem;
+        gap: 3.5rem;
+        padding-bottom: 3rem;
+      }
+    </style>
+    <main class="wrapper">
+      <aside class="container">
+        <div class="main-heading">
+          <h1 class="heading">
+            Get <span class="insi-color">insights</span> that help <br />
+            your business grow.
+          </h1>
+        </div>
+        <div class="para-one">
+          <p class="paragraph">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overral efficiency.
+          </p>
+        </div>
+        <div class="punkty">
+          <div class="10k">
+            <h2 class="tenk">10k+</h2>
+            <p class="companies">COMPANIES</p>
+          </div>
+          <div class="threeone">
+            <h2 class="threeonefour">314</h2>
+            <p class="templates">TEMPLATES</p>
+          </div>
+          <div class="twelve">
+            <h2 class="twelveM">12M+</h2>
+            <p class="Queries">QUERIES</p>
+          </div>
+        </div>
+      </aside>
+      <footer class="image-footer">
+        <img src="./images/image-header-desktop.jpg" alt="" class="image" />
+      </footer>
+    </main>
+  </body>
+</html>
